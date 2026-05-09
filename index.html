@@ -15,13 +15,13 @@
     <link rel="icon" href="favicon.ico" />
   </head>
   <body>
-    <!--header
+    <!--header-->
     <header class="header">
       <nav class="nav">
         <img
           class="logo"
           src="./images/logo_coffeeshop_dark.svg"
-          alt="logo de triple espresso"
+          alt="logo_de_triple_espresso"
         />
         <ul class="nav-links">
           <li><a href="#" class="nav_link">Reservar una mesa</a></li>
@@ -48,24 +48,46 @@
     </div>
     </header>
     <main class="content"><section class="reservation" id="reservation"></section></main>
-    <footer class="footer" id="footer"></footer>-->
-    <!--reservation-->
+    <footer class="footer" id="footer"></footer>
+     <!--main-->
     <main class="main" title="reservation">
     <h2 class="reservation">Reservar una mesa</h2>
     <form class="form" action="#" method="get">
       <fieldset class="form__fieldset">
-      <label class="form__fieldset--label">Nombre*</label>
-      <input type="text" class="form__fieldset--input">
-      <label class="form__fieldset--label" >Número de comensales*</label>
-      <input type="number" class="form__fieldset--input">
-      <label class="form__fieldset--label">Fecha y hora*</label>
-      <input type="date" class="form__fieldset--input">
-      <label class="form__fieldset--label">Tu correo electrinico*</label>
-      <input type="email" class="form__fieldset--input" >
+      <label for="full-name" class="form__fieldset--label">Nombre*</label>
+      <input type="text" id="full-name" required class="form__fieldset--input">
+      <label for="dinners" class="form__fieldset--label" >Número de comensales*</label>
+      <input type="number" min="1" max="8" id="dinners" required class="form__fieldset--input">
+      <label for="date" class="form__fieldset--label">Fecha y hora*</label>
+      <input type="date" id="date" required class="form__fieldset--input">
+      <label for="email" form="email" class="form__fieldset--label">Tu correo electrinico*</label>
+      <input type="email" id="email" required class="form__fieldset--input" >
       </fieldset>
       <button type="submit" class="form__button">Reservar una mesa</button>
       <label class="form__fieldset--label"> <input type="checkbox"> Acepto los términos de uso</label>
     </form>
     </main>
+    <!--footer-->
+<footer class="footer">
+  <div class="circle"></div>
+  <nav class="footer-nav">
+    <img class="logo" src="/images/logo_coffeeshop_light.svg" alt="logo_de_triple_espresso"/>
+    <ul class="footer__nav--links">Redes sociales
+      <li class="footer__nav-link">
+        <a href="#" class="social-media">
+          <img src="/images/facebook_white.svg" alt="Facebook" class="social-icon">
+          Facebook
+        </a>
+      </li>
+      <li class="footer__nav-link">
+        <a href="#" class="social-media">
+          <img src="/images/instagram_white.svg" alt="Istagram" class="social-icon">
+          Istagram
+        </a>
+      </li>
+    </ul>
+  </nav>
+  <p class="copyrigth">©Jesus Abrabham Pozos Gutierrez 2026</p>
+</footer>
   </body>
 </html>
