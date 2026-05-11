@@ -75,20 +75,53 @@
         <input
           class="form__input"
           type="number"
-          ="1"
+          id="guests"
+          name="guests"
+          min="1"
           max="8"
-          id="dinners"
+          placeholder="1-8"
           required
-          class="form__fieldset--idinput">
+      />
 
-        <label for="date" class="form__fieldset--label">Fecha y hora*</label>
-      <input type="date" id="date" required class="form__fieldset--input">
-      <label for="email" form="email" class="form__fieldset--label">Tu correo electrinico*</label>
-      <input type="email" id="email" required class="form__fieldset--input" >
-      </fieldset>
-      <button type="submit" class="form__button">Reservar una mesa</button>
-      <label class="form__fieldset--label"> <input type="checkbox"> Acepto los términos de uso</label>
+      <label class="form__label" for="reservation-date">
+        Fecha y hora*
+      </label>
+
+      <input
+          class="form__input"
+          type="datetime-local"
+          id="reservation-date"
+          required
+      />
+
+      <label class="form__label" for="email">
+        Tu correo electrinico*
+      </label>
+
+      <input
+          class="form__input"
+          type="email"
+          id="email"
+          placeholder="email@email.com"
+          required
+       />
+     </fieldset>
+
+     <button class="form__button" type="submit" >
+      Reservar una mesa
+    </button>
+
+    <label class="form__checkbox--label">
+      <input
+          class="form__checkbox"
+          type="checkbox"
+          required
+      />
+
+      Acepto los términos de uso
+    </label>
     </form>
+      </section>
     </main>
     <!--footer-->
 <footer class="footer">
