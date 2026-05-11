@@ -47,19 +47,41 @@
       </div>
     </div>
     </header>
-    <main class="content"><section class="reservation" id="reservation"></section></main>
-    <footer class="footer" id="footer"></footer>
-     <!--main-->
-    <main class="main" id="reservation">
-      <section class="reservation">
-    <h2 class="reservation-title">Reservar una mesa</h2>
-    <form class="form" action="#" method="get">
+
+    <!--reservation section-->
+    <main class="main">
+      <section class="reservation" id="reservation">
+       <h2 class="reservation-title">
+        Reserva una mesa
+      </h2>
+      <form class="form" action="#" method="post">
       <fieldset class="form__fieldset">
-      <label for="full-name" class="form__fieldset--label">Nombre*</label>
-      <input type="text" id="full-name" required class="form__fieldset--input">
-      <label for="dinners" class="form__fieldset--label" >Número de comensales*</label>
-      <input type="number" min="1" max="8" id="dinners" required class="form__fieldset--input">
-      <label for="date" class="form__fieldset--label">Fecha y hora*</label>
+        <label class="form__label" for="full-name">
+        Nombre*</label>
+
+        <input
+          class="form__input"
+          type="text"
+          id="full-name"
+          name="full-name"
+          placeholder="nombre"
+          required
+        />
+
+      <label class="form__label" for="guests">
+        Número de comensales*
+      </label>
+
+        <input
+          class="form__input"
+          type="number"
+          ="1"
+          max="8"
+          id="dinners"
+          required
+          class="form__fieldset--idinput">
+
+        <label for="date" class="form__fieldset--label">Fecha y hora*</label>
       <input type="date" id="date" required class="form__fieldset--input">
       <label for="email" form="email" class="form__fieldset--label">Tu correo electrinico*</label>
       <input type="email" id="email" required class="form__fieldset--input" >
