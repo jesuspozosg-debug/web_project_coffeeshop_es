@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="es">
   <head>
     <meta charset="UTF-8" />
@@ -10,7 +10,7 @@
       href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Noto+Serif:ital,wght@0,100..900;1,100..900&display=swap"
       rel="stylesheet"
     />
-    <link rel="stylesheet" href="./styles/index.css"/>
+    <link rel="stylesheet" href="./styles/index.css" />
     <link rel="stylesheet" href="./styles/normalize.css" />
     <link rel="icon" href="favicon.ico" />
   </head>
@@ -28,144 +28,138 @@
           <li><a href="#" class="nav-link">Contactos</a></li>
         </ul>
       </nav>
-      <h1 class="header-title">Café de especialidad
-        <span class="span-accent">
-        en&nbsp;Triple&nbsp;Peaks</span>
+      <h1 class="header-title">
+        Café de especialidad
+        <span class="span-accent"> en&nbsp;Triple&nbsp;Peaks</span>
       </h1>
       <p class="header-description">
         ¡Te damos la bienvenida a nuestra zona de estudio! Aquí tenemos café
         para darte energía y motivar tu creatividad.
       </p>
-      <img class="header-image" src="./images/inside_coffee_shop.png" alt="Interior de la Cafeteria Triple Espresso" />
+      <img
+        class="header-image"
+        src="./images/inside_coffee_shop.png"
+        alt="Interior de la Cafeteria Triple Espresso"
+      />
       <div class="header-info">
-        <div class="header-hours"><p class="info-text">Horario:</p>
-        <p class="info-text">Lunes a Viernes (de 10:00h a 19:00h)</p>
-        <p class="info-text">Sábados y Domingos (de 11:00h a 18:00h)</p>
+        <div class="header-hours">
+          <p class="info-text">Horario:</p>
+          <p class="info-text">Lunes a Viernes (de 10:00h a 19:00h)</p>
+          <p class="info-text">Sábados y Domingos (de 11:00h a 18:00h)</p>
+        </div>
+        <div class="header-address">
+          <p class="info-text">Avenida del Éxito 200, Ciudad Triple Peaks</p>
+        </div>
       </div>
-      <div class="header-address">
-        <p class="info-text">Avenida del Éxito 200, Ciudad Triple Peaks</p>
-      </div>
-    </div>
     </header>
 
     <!--reservation section-->
     <main class="main">
       <section class="reservation" id="reservation">
-       <h2 class="reservation-title">
-        Reserva una mesa
-      </h2>
-      <form class="form" action="#" method="post">
-      <fieldset class="form__fieldset">
-        <label class="form__label" for="full-name">
-        Nombre*</label>
+        <h2 class="reservation-title">Reserva una mesa</h2>
+        <form class="form" action="#" method="post">
+          <fieldset class="form__fieldset">
+            <label class="form__label" for="full-name"> Nombre*</label>
 
-        <input
-          class="form__input"
-          type="text"
-          id="full-name"
-          name="full-name"
-          placeholder="nombre"
-          required
-        />
+            <input
+              class="form__input"
+              type="text"
+              id="full-name"
+              name="full-name"
+              placeholder="nombre"
+              required
+            />
 
-      <label class="form__label" for="guests">
-        Número de comensales*
-      </label>
+            <label class="form__label" for="guests">
+              Número de comensales*
+            </label>
 
-        <input
-          class="form__input"
-          type="number"
-          id="guests"
-          name="guests"
-          min="1"
-          max="8"
-          placeholder="1-8"
-          required
-      />
+            <input
+              class="form__input"
+              type="number"
+              id="guests"
+              name="guests"
+              min="1"
+              max="8"
+              placeholder="1-8"
+              required
+            />
 
-      <label class="form__label" for="reservation-date">
-        Fecha y hora*
-      </label>
+            <label class="form__label" for="reservation-date">
+              Fecha y hora*
+            </label>
 
-      <input
-          class="form__input"
-          type="datetime-local"
-          id="reservation-date"
-          required
-      />
+            <input
+              class="form__input"
+              type="datetime-local"
+              id="reservation-date"
+              required
+            />
 
-      <label class="form__label" for="email">
-        Tu correo electrinico*
-      </label>
+            <label class="form__label" for="email">
+              Tu correo electrinico*
+            </label>
 
-      <input
-          class="form__input"
-          type="email"
-          id="email"
-          placeholder="email@email.com"
-          required
-       />
-     </fieldset>
+            <input
+              class="form__input"
+              type="email"
+              id="email"
+              placeholder="email@email.com"
+              required
+            />
+          </fieldset>
 
-     <button class="form__button" type="submit" >
-      Reservar una mesa
-    </button>
+          <button class="form__button" type="submit">Reservar una mesa</button>
 
-    <label class="form__checkbox--label">
-      <input
-          class="form__checkbox"
-          type="checkbox"
-          required
-      />
+          <label class="form__checkbox--label">
+            <input class="form__checkbox" type="checkbox" required />
 
-      Acepto los términos de uso
-    </label>
-    </form>
+            Acepto los términos de uso
+          </label>
+        </form>
       </section>
     </main>
 
     <!--FOOTER-->
 
-<footer class="footer" id="footer">
-  <div class="footer__circle"></div>
+    <footer class="footer" id="footer">
+      <div class="footer__circle"></div>
 
-    <div class="footer__content">
-      <img
-      class="footer__logo"
-      src="/images/logo_coffeeshop_light.svg"
-      alt="Logo_de_triple_espresso"/>
-    <nav class="footer__nav">
-      <h2 class="footer__nav-title">
-        Redes sociales
-      </h2>
-      <ul class="footer__list">
-        <li class="footer__list-item">
-          <a class="footer__social--link" href="#">
-            <img
-            class="footer__social--icon"
-            src="./images/facebook_white.svg"
-            alt="Facebook"/>
+      <div class="footer__content">
+        <img
+          class="footer__logo"
+          src="/images/logo_coffeeshop_light.svg"
+          alt="Logo_de_triple_espresso"
+        />
+        <nav class="footer__nav">
+          <h2 class="footer__nav-title">Redes sociales</h2>
+          <ul class="footer__list">
+            <li class="footer__list-item">
+              <a class="footer__social--link" href="#">
+                <img
+                  class="footer__social--icon"
+                  src="./images/facebook_white.svg"
+                  alt="Facebook"
+                />
 
-            Facebook
-          </a>
-        </li>
-        <li class="footer__list-item">
-          <a class="footer__social--link" href="#">
-            <img
-            class="footer__social--icon"
-            src="./images/instagram_white.svg"
-            alt="Istagram"
-            />
+                Facebook
+              </a>
+            </li>
+            <li class="footer__list-item">
+              <a class="footer__social--link" href="#">
+                <img
+                  class="footer__social--icon"
+                  src="./images/instagram_white.svg"
+                  alt="Istagram"
+                />
 
-            Istagram
-          </a>
-        </li>
-      </ul>
-    </nav>
-  </div>
-<p class="footer__copyright">
-  © 2026 Jesus Abraham Pozos Gutierrez
-    </p>
-  </footer>
- </body>
+                Istagram
+              </a>
+            </li>
+          </ul>
+        </nav>
+      </div>
+      <p class="footer__copyright">© 2026 Jesus Abraham Pozos Gutierrez</p>
+    </footer>
+  </body>
 </html>
