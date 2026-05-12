@@ -19,8 +19,8 @@
 .footer__circle {
   position: absolute;
 
-  top: -128;
-  left: -44;
+  top: -128px;
+  left: -44px;
 
   width: 340px;
   height: 340px;
@@ -48,15 +48,6 @@
 .footer__logo {
   height: 39px;
   width: 105px;
-}
-
-.footer__nav--links {
-  color: #fff;
-  font-family: "Inter";
-  font-style: normal;
-  font-weight: normal;
-  font-size: 16px;
-  line-height: 20px;
 }
 
 /* NAVIGATION */
@@ -111,7 +102,7 @@
 
 /* COPYRIGHT */
 
-.footer__copyrigth {
+.footer__copyright {
   position: relative;
   z-index: 1;
 
